@@ -18,6 +18,15 @@ class EasyChallenges {
      and returns true if the string has only unique letters, taking letter case into account
      */
     func checkUniqueLetters(in input: String) -> Bool {
+        var checkedCharacters = [Character]()
+
+        for char in input {
+            if checkedCharacters.contains(char) {
+                return false
+            }
+            checkedCharacters.append(char)
+        }
+
         return true
     }
 }
