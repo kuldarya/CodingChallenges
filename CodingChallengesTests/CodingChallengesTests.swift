@@ -32,4 +32,24 @@ final class CodingChallengesTests: XCTestCase {
         assert(sut.checkIfStringPalindrome(input: "Never odd or even") == false, "Challenge 2 failed")
         assert(sut.checkIfStringPalindrome(input: "Hello world") == false, "Challenge 2 failed")
     }
+
+    // Challeng 3: Do two strings contain the same characters?
+    func testTwoStringsHaveTheSameCharacters() {
+        assert(sut.checkIfStringsContainSameCharacters(
+            firstString: "abc",
+            secondString: "cba") == true, "Challenge 3 failed"
+        )
+        assert(sut.checkIfStringsContainSameCharacters(
+            firstString: " a1 b2",
+            secondString: " b1 a2") == true, "Challenge 3 failed"
+        )
+        assert(sut.checkIfStringsContainSameCharacters(
+            firstString: "abc",
+            secondString: "abca") == false, "Challenge 3 failed"
+        )
+        assert(sut.checkIfStringsContainSameCharacters(
+            firstString: "Abc",
+            secondString: "abc") == false, "Challenge 3 failed"
+        )
+    }
 }

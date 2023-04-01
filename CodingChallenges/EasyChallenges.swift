@@ -41,4 +41,15 @@ class EasyChallenges {
 
         return String(lowercasedInput.reversed()) == lowercasedInput
     }
+
+    /*
+     Challenge 3: Do two strings contain the same characters?
+
+     Write a function that accepts two String parameters,
+     and returns true if they contain the same characters in any order
+     taking into account letter case
+     */
+    func checkIfStringsContainSameCharacters(firstString: String, secondString: String) -> Bool {
+        return false
+    }
 }
