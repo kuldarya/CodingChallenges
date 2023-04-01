@@ -37,6 +37,8 @@ class EasyChallenges {
      and returns true if the string reads the same when reversed, ignoring case.
      */
     func checkIfStringPalindrome(input: String) -> Bool {
-        return true
+        let lowercasedInput = input.lowercased()
+
+        return String(lowercasedInput.reversed()) == lowercasedInput
     }
 }
