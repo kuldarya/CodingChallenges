@@ -50,6 +50,22 @@ class EasyChallenges {
      taking into account letter case
      */
     func checkIfStringsContainSameCharacters(firstString: String, secondString: String) -> Bool {
+        return firstString.sorted() == secondString.sorted()
+
+        /*
+         That was my initial solution, too long but still works:
+
+        let firstSorted = firstString.sorted()
+        let secondSorted = secondString.sorted()
+
+        if firstSorted == secondSorted {
+            for char in firstSorted {
+                if secondSorted.contains(char) {
+                    return true
+                }
+            }
+        }
         return false
+         */
     }
 }
