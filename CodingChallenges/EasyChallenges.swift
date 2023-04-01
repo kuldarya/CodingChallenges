@@ -29,4 +29,14 @@ class EasyChallenges {
 
         return true
     }
+
+    /*
+     Challenge 2: Is a String palindrome?
+
+     Write a function that accepts a String as its only parameter,
+     and returns true if the string reads the same when reversed, ignoring case.
+     */
+    func checkIfStringPalindrome(input: String) -> Bool {
+        return true
+    }
 }
