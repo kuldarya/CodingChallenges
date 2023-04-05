@@ -66,4 +66,11 @@ final class CodingStringChallengesTests: XCTestCase {
         assert(sut.countCharacters(in: "Hello", count: "a") == 0, "Challenge 5 failed")
         assert(sut.countCharacters(in: "Hello", count: "e") == 1, "Challenge 5 failed")
     }
+
+    // Challenge 6: Remove duplicate characters
+    func testStringDoesntContainDuplicateCharacters() {
+        assert(sut.removeDuplicateLetters(from: "Hello") == "Helo", "Challenge 6 failed")
+        assert(sut.removeDuplicateLetters(from: "aabbcc") == "abc", "Challenge 6 failed")
+        assert(sut.removeDuplicateLetters(from: "Abcd") == "Abcd", "Challenge 6 failed")
+    }
 }

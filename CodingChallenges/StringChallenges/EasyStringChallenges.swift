@@ -89,6 +89,22 @@ class EasyStringChallenges {
 //            $1 == count ? $0 + 1 : $0
 //        }
     }
+
+    /*
+     Challenge 6: Remove duplicate letters from a String
+
+     String as an input, returns the same string just with duplicate letters removed.
+     */
+    func removeDuplicateLetters(from input: String) -> String {
+        var used = [Character]()
+
+        for letter in input {
+            if !used.contains(letter) {
+                used.append(letter)
+            }
+        }
+        return String(used)
+    }
 }
 
 /*
