@@ -59,4 +59,11 @@ final class CodingStringChallengesTests: XCTestCase {
         assert("Hello world".customContains("WORLD") == true, "Challenge 4 failed")
         assert("Hello world".customContains("Goodbye") == false, "Challenge 4 failed")
     }
+
+    // Challenge 5: Count the characters
+    func testHowManyTimesCharacterAppearsInString() {
+        assert(sut.countCharacters(in: "Hello", count: "l") == 2, "Challenge 5 failed")
+        assert(sut.countCharacters(in: "Hello", count: "a") == 0, "Challenge 5 failed")
+        assert(sut.countCharacters(in: "Hello", count: "e") == 1, "Challenge 5 failed")
+    }
 }
