@@ -69,3 +69,18 @@ class EasyChallenges {
          */
     }
 }
+
+/*
+ Challenge 4: Does one string contain another?
+
+ Write your own version of the contains() method on String
+ that ignores letter case, and without using the existing contains() method.
+
+ Tip: range(of:) method returns the position of one string inside another.
+ */
+extension String {
+    func customContains(_ string: Self) -> Bool {
+        return range(of: string, options: .caseInsensitive) != nil
+        //self.uppercased().range(of: string.uppercased()) != nil
+    }
+}

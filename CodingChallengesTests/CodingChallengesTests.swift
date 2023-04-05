@@ -52,4 +52,11 @@ final class CodingChallengesTests: XCTestCase {
             secondString: "abc") == false, "Challenge 3 failed"
         )
     }
+
+    // Challenge 4: Does one string contain another?
+    func testCheckIfOneStringContainsAnother() {
+        assert("Hello world".customContains("Hello") == true, "Challenge 4 failed")
+        assert("Hello world".customContains("WORLD") == true, "Challenge 4 failed")
+        assert("Hello world".customContains("Goodbye") == false, "Challenge 4 failed")
+    }
 }
