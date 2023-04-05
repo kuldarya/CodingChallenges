@@ -1,16 +1,16 @@
 //
-//  CodingChallengesTests.swift
+//  CodingStringChallengesTests.swift
 //  CodingChallengesTests
 //
 
 import XCTest
 @testable import CodingChallenges
 
-final class CodingChallengesTests: XCTestCase {
-    var sut: EasyChallenges!
+final class CodingStringChallengesTests: XCTestCase {
+    var sut: EasyStringChallenges!
 
     override func setUp() {
-        sut = EasyChallenges()
+        sut = EasyStringChallenges()
     }
 
     override func tearDown() {

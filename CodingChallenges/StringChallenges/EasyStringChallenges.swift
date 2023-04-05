@@ -1,11 +1,11 @@
 //
-//  EasyChallenges.swift
+//  EasyStringChallenges.swift
 //  CodingChallenges
 //
 
 import Foundation
 
-class EasyChallenges {
+class EasyStringChallenges {
 
     init() {}
 
