@@ -68,6 +68,27 @@ class EasyStringChallenges {
         return false
          */
     }
+
+    /*
+     Challenge 5: Count the characters
+
+     Write a function that accepts a string, and returns how many times a specific character appears, taking case into account.
+     */
+    func countCharacters(in input: String, count: Character) -> Int {
+        var letterCount = 0
+
+        for letter in input {
+            if letter == count {
+                letterCount += 1
+            }
+        }
+        return letterCount
+
+//     Second solution, with `reduce`
+//        return input.reduce(0) {
+//            $1 == count ? $0 + 1 : $0
+//        }
+    }
 }
 
 /*
