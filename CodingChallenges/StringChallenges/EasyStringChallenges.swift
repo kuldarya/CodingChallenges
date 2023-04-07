@@ -128,6 +128,21 @@ class EasyStringChallenges {
         }
         return returnValue
     }
+
+    /*
+     Using a while loop, print the odd numbers between 1 to 10.
+     */
+    func printOnlyOddNumbers() {
+        var num = 0
+        while num <= 10 {
+            num += 1
+
+            if (num % 2) == 0 {
+                continue
+            }
+            print(num)
+        }
+    }
 }
 
 /*
