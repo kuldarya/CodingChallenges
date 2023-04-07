@@ -112,8 +112,21 @@ class EasyStringChallenges {
      Write a function that returns a string with any consecutive spaces replaced with a single space.
      */
     func replaceWithSingleWhitespace(from input: String) -> String {
-        return ""
+        var seenSpace = false
+        var returnValue = ""
 
+        for char in input {
+            if char == " " {
+                if seenSpace {
+                    continue
+                }
+                seenSpace = true
+            } else {
+                seenSpace = false
+            }
+            returnValue.append(char)
+        }
+        return returnValue
     }
 }
 
