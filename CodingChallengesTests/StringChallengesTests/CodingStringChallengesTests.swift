@@ -73,4 +73,11 @@ final class CodingStringChallengesTests: XCTestCase {
         assert(sut.removeDuplicateLetters(from: "aabbcc") == "abc", "Challenge 6 failed")
         assert(sut.removeDuplicateLetters(from: "Abcd") == "Abcd", "Challenge 6 failed")
     }
+
+    // Challenge 7: Remove extra whitespaces and return a single whitespace
+    func testStringHasSingleWhitespace() {
+        assert(sut.replaceWithSingleWhitespace(from: "   a") == " a", "Challenge 7 failed")
+        assert(sut.replaceWithSingleWhitespace(from: "a   b   c") == "a b c", "Challenge 7 failed")
+        assert(sut.replaceWithSingleWhitespace(from: "abc") == "abc", "Challenge 7 failed")
+    }
 }

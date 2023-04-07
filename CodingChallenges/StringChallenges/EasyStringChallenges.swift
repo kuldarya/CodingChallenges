@@ -105,6 +105,16 @@ class EasyStringChallenges {
         }
         return String(used)
     }
+
+    /*
+     Challenge 7: Condense whitespace
+
+     Write a function that returns a string with any consecutive spaces replaced with a single space.
+     */
+    func replaceWithSingleWhitespace(from input: String) -> String {
+        return ""
+
+    }
 }
 
 /*
