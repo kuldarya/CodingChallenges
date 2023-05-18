@@ -27,4 +27,20 @@ final class TrickyStringChallenges {
         let combined = input + input
         return combined.contains(rotated)
     }
+    
+    /*
+     Challenge 8: Find pangrams.
+     
+     Write a function that returns true if it is given a string that is an English pangram, ignoring letter case.
+     Tip: A pangram is a string that contains every letter of the alphabet at least once.
+     */
+    func isStringPangram(input: String) -> Bool {
+        // Remove duplicates using `Set`.
+        let set = Set(input.lowercased())
+        // Ensure the letter is alphabetical.
+        // As Swift's characters conform to `Comparable`, we can compare them against "a" and "z".
+        let letters = set.filter { $0 >= "a" && $0 <= "z" }
+        // If you remove duplicates and non-alphabetic characters, the remaining string should have 26 letters.
+        return letters.count == 26
+    }
 }
