@@ -31,4 +31,14 @@ final class EasyNumbersChallenges {
             }
         }
     }
+    
+    /*
+     Challenge 17: Random number in range
+     
+     Write a function that accepts positive minimum and maximum integers,
+     and returns a random number between those two bounds, inclusive.
+     */
+    func generateRandomNumberBetween(min: Int, max: Int) -> Int {
+        return Int(arc4random_uniform(UInt32(max - min + 1))) + min
+    }
 }
