@@ -14,6 +14,8 @@
 		0B8A89E729D1C5DD00EB721B /* CodingStringChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A89E629D1C5DD00EB721B /* CodingStringChallengesTests.swift */; };
 		0B8A89EE29D1C5FE00EB721B /* EasyStringChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A89ED29D1C5FE00EB721B /* EasyStringChallenges.swift */; };
 		4BD7667A2A16174F000843AD /* TrickyStringChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD766792A16174F000843AD /* TrickyStringChallenges.swift */; };
+		4BD7667D2A162E9C000843AD /* EasyNumbersChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7667C2A162E9C000843AD /* EasyNumbersChallenges.swift */; };
+		4BD766802A162EF3000843AD /* NumbersChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7667F2A162EF3000843AD /* NumbersChallengesTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		0B8A89E629D1C5DD00EB721B /* CodingStringChallengesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStringChallengesTests.swift; sourceTree = "<group>"; };
 		0B8A89ED29D1C5FE00EB721B /* EasyStringChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStringChallenges.swift; sourceTree = "<group>"; };
 		4BD766792A16174F000843AD /* TrickyStringChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickyStringChallenges.swift; sourceTree = "<group>"; };
+		4BD7667C2A162E9C000843AD /* EasyNumbersChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNumbersChallenges.swift; sourceTree = "<group>"; };
+		4BD7667F2A162EF3000843AD /* NumbersChallengesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersChallengesTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		0B8A89CE29D1C54200EB721B /* CodingChallenges */ = {
 			isa = PBXGroup;
 			children = (
+				4BD7667B2A162E74000843AD /* NumbersChallenges */,
 				0B14B66129DD774100834128 /* StringChallenges */,
 				0B8A89CF29D1C54200EB721B /* CodingChallengesApp.swift */,
 				0B8A89D129D1C54200EB721B /* ContentView.swift */,
@@ -114,9 +119,26 @@
 		0B8A89E529D1C5DD00EB721B /* CodingChallengesTests */ = {
 			isa = PBXGroup;
 			children = (
+				4BD7667E2A162ED8000843AD /* NumbersChallengesTests */,
 				0B14B66229DD775300834128 /* StringChallengesTests */,
 			);
 			path = CodingChallengesTests;
+			sourceTree = "<group>";
+		};
+		4BD7667B2A162E74000843AD /* NumbersChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				4BD7667C2A162E9C000843AD /* EasyNumbersChallenges.swift */,
+			);
+			path = NumbersChallenges;
+			sourceTree = "<group>";
+		};
+		4BD7667E2A162ED8000843AD /* NumbersChallengesTests */ = {
+			isa = PBXGroup;
+			children = (
+				4BD7667F2A162EF3000843AD /* NumbersChallengesTests.swift */,
+			);
+			path = NumbersChallengesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +244,7 @@
 				0B8A89D229D1C54200EB721B /* ContentView.swift in Sources */,
 				0B8A89EE29D1C5FE00EB721B /* EasyStringChallenges.swift in Sources */,
 				4BD7667A2A16174F000843AD /* TrickyStringChallenges.swift in Sources */,
+				4BD7667D2A162E9C000843AD /* EasyNumbersChallenges.swift in Sources */,
 				0B8A89D029D1C54200EB721B /* CodingChallengesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD766802A162EF3000843AD /* NumbersChallengesTests.swift in Sources */,
 				0B8A89E729D1C5DD00EB721B /* CodingStringChallengesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
