@@ -73,4 +73,13 @@ final class CodingStringChallengesTests: XCTestCase {
         assert(sut.removeDuplicateLetters(from: "aabbcc") == "abc", "Challenge 6 failed")
         assert(sut.removeDuplicateLetters(from: "Abcd") == "Abcd", "Challenge 6 failed")
     }
+    
+    // Challenge 8: String is rotated
+    func testStringIsRotated() {
+        let sut = TrickyStringChallenges()
+        assert(sut.isStringRotated(input: "abcde", rotated: "eabcd") == true, "Challenge 8 failed")
+        assert(sut.isStringRotated(input: "abcde", rotated: "cdeab") == true, "Challenge 8 failed")
+        assert(sut.isStringRotated(input: "abcde", rotated: "abced") == false, "Challenge 8 failed")
+        assert(sut.isStringRotated(input: "abcde", rotated: "a") == false, "Challenge 8 failed")
+    }
 }

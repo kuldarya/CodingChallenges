@@ -5,7 +5,7 @@
 
 import Foundation
 
-class EasyStringChallenges {
+final class EasyStringChallenges {
 
     init() {}
 
