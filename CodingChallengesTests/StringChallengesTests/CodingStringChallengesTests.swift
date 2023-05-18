@@ -77,9 +77,18 @@ final class CodingStringChallengesTests: XCTestCase {
     // Challenge 8: String is rotated
     func testStringIsRotated() {
         let sut = TrickyStringChallenges()
+
         assert(sut.isStringRotated(input: "abcde", rotated: "eabcd") == true, "Challenge 8 failed")
         assert(sut.isStringRotated(input: "abcde", rotated: "cdeab") == true, "Challenge 8 failed")
         assert(sut.isStringRotated(input: "abcde", rotated: "abced") == false, "Challenge 8 failed")
         assert(sut.isStringRotated(input: "abcde", rotated: "a") == false, "Challenge 8 failed")
+    }
+    
+    // Challenge 9: String is pangram
+    func testStringIsPangram() {
+        let sut = TrickyStringChallenges()
+        
+        assert(sut.isStringPangram(input: "The quick brown fox jumps over the lazy dog") == true, "Challenge 9 failed")
+        assert(sut.isStringPangram(input: "The quick brown fox jumped over the lazy dog") == false, "Challenge 9 failed")
     }
 }
