@@ -13,6 +13,7 @@
 		0B8A89D729D1C54800EB721B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B8A89D629D1C54800EB721B /* Preview Assets.xcassets */; };
 		0B8A89E729D1C5DD00EB721B /* CodingStringChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A89E629D1C5DD00EB721B /* CodingStringChallengesTests.swift */; };
 		0B8A89EE29D1C5FE00EB721B /* EasyStringChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8A89ED29D1C5FE00EB721B /* EasyStringChallenges.swift */; };
+		4BCDD9DF2A17922200594F56 /* LeetCodeChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCDD9DE2A17922200594F56 /* LeetCodeChallenges.swift */; };
 		4BD7667A2A16174F000843AD /* TrickyStringChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD766792A16174F000843AD /* TrickyStringChallenges.swift */; };
 		4BD7667D2A162E9C000843AD /* EasyNumbersChallenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7667C2A162E9C000843AD /* EasyNumbersChallenges.swift */; };
 		4BD766802A162EF3000843AD /* NumbersChallengesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7667F2A162EF3000843AD /* NumbersChallengesTests.swift */; };
@@ -37,6 +38,7 @@
 		0B8A89E429D1C5DD00EB721B /* CodingChallengesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B8A89E629D1C5DD00EB721B /* CodingStringChallengesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStringChallengesTests.swift; sourceTree = "<group>"; };
 		0B8A89ED29D1C5FE00EB721B /* EasyStringChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyStringChallenges.swift; sourceTree = "<group>"; };
+		4BCDD9DE2A17922200594F56 /* LeetCodeChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCodeChallenges.swift; sourceTree = "<group>"; };
 		4BD766792A16174F000843AD /* TrickyStringChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickyStringChallenges.swift; sourceTree = "<group>"; };
 		4BD7667C2A162E9C000843AD /* EasyNumbersChallenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyNumbersChallenges.swift; sourceTree = "<group>"; };
 		4BD7667F2A162EF3000843AD /* NumbersChallengesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersChallengesTests.swift; sourceTree = "<group>"; };
@@ -98,10 +100,11 @@
 		0B8A89CE29D1C54200EB721B /* CodingChallenges */ = {
 			isa = PBXGroup;
 			children = (
-				4BD7667B2A162E74000843AD /* NumbersChallenges */,
-				0B14B66129DD774100834128 /* StringChallenges */,
 				0B8A89CF29D1C54200EB721B /* CodingChallengesApp.swift */,
 				0B8A89D129D1C54200EB721B /* ContentView.swift */,
+				4BCDD9DD2A17920500594F56 /* LeetCodeChallenges */,
+				4BD7667B2A162E74000843AD /* NumbersChallenges */,
+				0B14B66129DD774100834128 /* StringChallenges */,
 				0B8A89D329D1C54800EB721B /* Assets.xcassets */,
 				0B8A89D529D1C54800EB721B /* Preview Content */,
 			);
@@ -123,6 +126,14 @@
 				0B14B66229DD775300834128 /* StringChallengesTests */,
 			);
 			path = CodingChallengesTests;
+			sourceTree = "<group>";
+		};
+		4BCDD9DD2A17920500594F56 /* LeetCodeChallenges */ = {
+			isa = PBXGroup;
+			children = (
+				4BCDD9DE2A17922200594F56 /* LeetCodeChallenges.swift */,
+			);
+			path = LeetCodeChallenges;
 			sourceTree = "<group>";
 		};
 		4BD7667B2A162E74000843AD /* NumbersChallenges */ = {
@@ -245,6 +256,7 @@
 				0B8A89EE29D1C5FE00EB721B /* EasyStringChallenges.swift in Sources */,
 				4BD7667A2A16174F000843AD /* TrickyStringChallenges.swift in Sources */,
 				4BD7667D2A162E9C000843AD /* EasyNumbersChallenges.swift in Sources */,
+				4BCDD9DF2A17922200594F56 /* LeetCodeChallenges.swift in Sources */,
 				0B8A89D029D1C54200EB721B /* CodingChallengesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
