@@ -41,4 +41,23 @@ final class EasyNumbersChallenges {
     func generateRandomNumberBetween(min: Int, max: Int) -> Int {
         return Int(arc4random_uniform(UInt32(max - min + 1))) + min
     }
+    
+    /*
+     Challenge 18: Recreate the pow() function
+     
+     Create a function that accepts positive two integers,
+     and raises the first to the power of the second.
+     */
+    func toThePowerOfSecond(number: Int, power: Int) -> Int {
+        guard number > 0, power > 0 else {
+            return 0
+        }
+        var returnValue = number
+        
+        for _ in 0..<power {
+            returnValue *= number
+        }
+
+        return returnValue
+    }
 }
