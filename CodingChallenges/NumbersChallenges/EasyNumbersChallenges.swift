@@ -60,4 +60,13 @@ final class EasyNumbersChallenges {
 
         return returnValue
     }
+    
+    /*
+     Challenge 19: Swap two numbers
+     
+     Swap two positive variable integers, a and b, without using a temporary variable.
+     */
+    func swapNumbers(a: inout Int, b: inout Int) {
+        (a, b) = (b, a)
+    }
 }
